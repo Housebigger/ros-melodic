@@ -1,0 +1,16 @@
+controller_list:
+  - name: fake_wjarm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - A
+      - B
+      - C
+      - D
+      - E
+  - name: fake_wjhand_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - E
+initial:  # Define initial robot poses.
+  - group: wjarm
+    pose: up

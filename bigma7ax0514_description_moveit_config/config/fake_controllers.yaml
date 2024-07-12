@@ -1,0 +1,19 @@
+controller_list:
+  - name: fake_arm1_bigmama_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - Joint_11
+      - Joint_12
+      - Joint_13
+      - Joint_14
+  - name: fake_arm2_bigmama_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - Joint_21
+      - Joint_22
+      - Joint_23
+initial:  # Define initial robot poses.
+  - group: arm1_bigmama
+    pose: horrizon10
+  - group: arm2_bigmama
+    pose: horrizon20

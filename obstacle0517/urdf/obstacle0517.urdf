@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="obstacle0517">
+  <link
+    name="obstacle">
+    <inertial>
+      <origin
+        xyz="-0.01575 0.0031948 0.019643"
+        rpy="0 0 0" />
+      <mass
+        value="0.0035284" />
+      <inertia
+        ixx="1.2928E-06"
+        ixy="6.2036E-08"
+        ixz="4.1233E-07"
+        iyy="9.7387E-07"
+        iyz="-1.4287E-07"
+        izz="9.9373E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://obstacle0517/meshes/obstacle.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://obstacle0517/meshes/obstacle.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

@@ -1,0 +1,10 @@
+controller_list:
+  - name: fake_arm_bigmama_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - Joint_1
+      - Joint_2
+      - Joint_3
+initial:  # Define initial robot poses.
+  - group: arm_bigmama
+    pose: up

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="tubestraight0303">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="1.25 -0.00098688 0.62711"
+        rpy="0 0 0" />
+      <mass
+        value="106.93" />
+      <inertia
+        ixx="78.399"
+        ixy="3.0113E-13"
+        ixz="-7.3168E-14"
+        iyy="69.372"
+        iyz="-0.066809"
+        izz="120.41" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tubestraight0303/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.7 0 0.7 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tubestraight0303/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_wing">
+    <inertial>
+      <origin
+        xyz="1.25 8.8818E-16 0.074234"
+        rpy="0 0 0" />
+      <mass
+        value="9590.7" />
+      <inertia
+        ixx="3718.4"
+        ixy="-1.2985E-11"
+        ixz="-1.7363E-12"
+        iyy="7458"
+        iyz="-5.4001E-13"
+        izz="6250.8" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tubestraight0303/meshes/Link_wing.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 1 0 0.001" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tubestraight0303/meshes/Link_wing.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_wing"
+    type="revolute">
+    <origin
+      xyz="0 0 1.0635"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_wing" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0.0001"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
